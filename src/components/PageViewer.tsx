@@ -28,17 +28,6 @@ const PageViewer: React.FC<PageViewerProps> = ({ pages }) => {
     }
   };
 
-  const handleImageClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const { clientX, currentTarget } = event;
-    const { offsetWidth } = currentTarget;
-
-    if (clientX < offsetWidth / 2) {
-      goToPreviousPage();
-    } else {
-      goToNextPage();
-    }
-  };
-
   if (!pages || pages.length === 0) {
     return <div>No pages available</div>;
   }
