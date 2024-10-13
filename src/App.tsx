@@ -8,7 +8,7 @@ import PageViewer from "./components/PageViewer";
 
 function App() {
   const { books, loading: booksLoading } = useFetchBooks();
-const [selectedBookId, setSelectedBookId] = useState<string|null>(null);
+const [selectedBookId, setSelectedBookId] = useState<string|"">("");
   const { chapters, loading: chaptersLoading } = useFetchChapters(
     selectedBookId || "1"
   );
