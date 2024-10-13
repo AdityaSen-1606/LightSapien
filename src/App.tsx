@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFetchBooks } from "./hooks/useFetchBook";
 import { useFetchChapters } from "./hooks/useFtechChapters";
 import { useFetchPages } from "./hooks/useFetchPages";
